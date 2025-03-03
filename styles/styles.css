@@ -1,40 +1,76 @@
 *{
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px;
     box-sizing: border-box;
 }
+body{
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Lato", sans-serif; */
+}
+a{
+    text-decoration: none;
+}
+.iconAltura{
+    width: 40px;
+    height: 40px;
+}
+
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
     .header{
-        background: #000;
+        background: url(../images/bg2.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
     }
         .menu{
-            background: #2d4059;
+            background: rgba(0, 0, 0, 0.2);
             display: flex;
             flex-flow: row nowrap; 
-            height: 100px;   
-            align-items: center;        
+            height: 60px;   
+            align-items: center;  
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);      
         }
             .logo{
-                background: #ea5455;
                 flex: 1 1 auto;
-                height: 30px;
             }
+                .logo a{
+                   color: white;
+                   font-size: 30px; 
+                }
+                .logo a:hover{
+                   color: #343434; 
+                }
             .nav{
-                background: #ea5455;
                 /* esto significa que sera 5 veces mayor que sus hermanos 'logo' , 'social' */
                 flex: 5 1 auto;
-                height: 30px;
             }
+                .nav a{
+                    color: white;
+                    font-size: 11px;
+                    text-transform: uppercase; 
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover{
+                    color: #343434;
+                }
             .social{    
-                background: #ea5455;
                 flex: 1 1 auto;
-                height: 30px;
             }
+                .social a{
+                    color: white;
+                    text-transform: uppercase; 
+                    font-size: 18px;
+                    padding: 0 5px;
+                }
+                .social a:hover{
+                    color: #343434;
+                }
         .texto-principal{
             background: #f07b3f;
         }
