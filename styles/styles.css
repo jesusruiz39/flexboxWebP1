@@ -181,7 +181,7 @@ a{
         }
 
 /* aqui nuestos media q // para nuestro responsive */
-@media all and (max-width: 800px){
+@media all and (max-width: 948px){
     .section{
         flex-direction: column;
     }
@@ -189,9 +189,19 @@ a{
         flex-direction: column;
         height: auto;
     }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+       font-size: 15px; 
+    }
+    .texto-principal{
+        height: 450px;
+    }
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 762px){
     .articulos{
         flex-direction: column;
     }
@@ -199,6 +209,10 @@ a{
         display: flex;
         justify-content: center;
     }
+}
+
+@media all and (max-width: 580px){
+    .off{ display: none;}
 }
 
 @media all and (max-width: 400px){
